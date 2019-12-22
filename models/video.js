@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const bookSchema = new Schema({
+const videoSchema = new Schema({
   videoId: { type: String, required: true },
   title: { type: String, required: true },
   description: { type: String, trim: true },
@@ -11,6 +11,6 @@ const bookSchema = new Schema({
   saved: {type: Boolean, default: false}
 });
 
-const Book = mongoose.model("Book", bookSchema);
+const Video = mongoose.model("Video", videoSchema);
 
-module.exports = Book;
+module.exports = Video;

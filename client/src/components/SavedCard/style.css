@@ -1,0 +1,67 @@
+.card {
+    margin: 5px 5px;
+    width: 300px;
+    min-height: 346px;
+    max-height: 346px;
+    float: left;
+}
+
+.card-image {
+    height: 200px;
+}
+
+.button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.vid-title {
+    margin-top: 10px;
+    font-size: 1.1em;
+    overflow-y: scroll;
+    max-height: 50px;
+}
+
+.desc-area {
+    margin-top: 10px;
+    height: 60px; 
+    overflow-y: scroll;
+}
+
+.vid-desc {
+    font-size: 0.8em;
+}
+
+i {
+    color: red !important; 
+    font-size: 1.3em;
+    position: absolute; 
+    top: 5px; 
+    right: 5px; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+ 

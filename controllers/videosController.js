@@ -2,9 +2,15 @@ const db = require("../models");
 
 module.exports = {
   create: function(req, res) {
-    db.Book
+    db.Video
       .create(req.body)
-      .then(dbModel => res.json(dbModel))
+      .then(data => res.json(data))
       .catch(err => res.status(422).json(err));
+  },
+  findSaved: function(req, res) {
+    db.Video 
+      .find(req.query)
+      .then(data => res.json(data))
+      .catch(err => res.status(422).json(err))
   }
 };
