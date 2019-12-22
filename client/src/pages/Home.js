@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import API from "../utils/API";
 import Searchbar from "../components/Searchbar";
 import Container from "../components/Container";
-
+import Card from "../components/Card"; 
 
 class Home extends Component {
 
@@ -32,14 +32,15 @@ handleFormSubmit = event => {
 
                 videos = videos.map(result => {
                     // console.log(res.data.items[0].snippet.thumbnails.high.url)
-
                     // console.log(result); 
+
                     result = {
                         videoId: result.id.videoId,
                         title: result.snippet.title,
                         description: result.snippet.description,
                         thumbnail: result.snippet.thumbnails.high.url,
-                        published: result.snippet.publishedAt
+                        published: result.snippet.publishedAt,
+                        channel: result.snippet.channelId
                     }
                     return result
                 });
@@ -59,6 +60,7 @@ render() {
                 handleFormSubmit={this.handleFormSubmit}
                 handleInputChange={this.handleInputChange}
             />   
+            <Card videos={this.state.videos}/>
         </Container>
        
     )
