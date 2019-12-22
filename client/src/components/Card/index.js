@@ -12,6 +12,10 @@ function Card(props) {
                             <img src={item.thumbnail} />
                     </div>
 
+                    <p id={item.videoId} onClick={(event) => props.handleSaveVideo(event)}>
+                    <i id={item.videoId} className="fas fa-plus-circle"></i>
+                    </p>
+
                     <div className="card-content">
                         <p className="vid-title">{item.title}</p>
                         {/* <p>{item.description}</p> */}

@@ -9,13 +9,30 @@ class Home extends Component {
 
 state = {
     search: "",
-    videos: []
+    videos: [],
+    message: ""
 }
 
 handleInputChange = event => {
 
     console.log(event.target.value);
     this.setState({search: event.target.value});
+
+}
+
+handleSaveVideo = event => {
+    event.preventDefault(); 
+    console.log("the save registers");
+
+    console.log(event.target.id); 
+
+    let newSavedVid = this.state.videos.filter(item => item.videoId === event.target.id)
+    newSavedVid = newSavedVid[0]; 
+    console.log(newSavedVid);
+    API.saveVideo(newSavedVid)
+        .then(
+            this.setState({message: "Your video was saved!"}))
+        .catch(err => console.log(err)); 
 
 }
 
@@ -61,7 +78,7 @@ render() {
                 handleFormSubmit={this.handleFormSubmit}
                 handleInputChange={this.handleInputChange}
             />   
-            <Card videos={this.state.videos}/>
+            <Card videos={this.state.videos} handleSaveVideo={this.handleSaveVideo}/>
         </Container>
        
     )

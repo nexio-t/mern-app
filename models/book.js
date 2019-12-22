@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
+  videoId: { type: String, required: true },
   title: { type: String, required: true },
-  author: { type: String, required: true },
   description: { type: String, trim: true },
-  image: { type: String, trim: true },
-  link: { type: String, trim: true },
-  date: { type: Date, default: Date.now },
+  thumbnail: { type: String, trim: true },
+  published: { type: String, trim: true },
+  channel: { type: String, trim: true },
   saved: {type: Boolean, default: false}
 });
 
