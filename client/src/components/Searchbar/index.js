@@ -1,14 +1,16 @@
   
 import React from "react";
 import "./style.css";
+import 'bulma/css/bulma.css'
+
 
 const SearchForm = props => {
     return (
         <form>
-            <div className="form-group">
+            <div className="field">
                 <label className="VideoSearchlabel"><h4>Search:</h4></label>
                 <br></br>
-                <input className="col-4 form-control"
+                <input className="input"
                     value={props.search}
                     type="text"
                     name="searchVideo"
@@ -16,7 +18,7 @@ const SearchForm = props => {
                     onChange={props.handleInputChange}
                 />
             </div>
-            <button type="submit" className="submitBtn btn btn-outline-info" onClick={props.handleFormSubmit}>
+            <button type="submit" className="button is-light" onClick={props.handleFormSubmit}>
                 Submit
             </button>
         </form>

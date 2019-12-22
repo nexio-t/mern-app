@@ -3,6 +3,7 @@ import API from "../utils/API";
 import Searchbar from "../components/Searchbar";
 import Container from "../components/Container";
 import Card from "../components/Card"; 
+import Columns from "../components/Columns";
 
 class Home extends Component {
 

@@ -1,0 +1,32 @@
+.card {
+    margin: 5px 5px;
+    width: 300px;
+    max-height: 346px;
+    float: left;
+}
+
+.card-image {
+    height: 200px;
+}
+
+.button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.vid-title {
+    margin-top: 10px;
+    font-size: 1.1em;
+    overflow-y: scroll;
+    max-height: 50px;
+}
+
+.desc-area {
+    margin-top: 10px;
+    height: 60px; 
+    overflow-y: scroll;
+}
+
+.vid-desc {
+    font-size: 0.8em;
+}

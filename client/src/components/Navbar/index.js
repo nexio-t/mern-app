@@ -1,19 +1,21 @@
 import React from "react";
+import "bulma/css/bulma.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <a className="navbar-brand" href="/">Video Search</a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div className="navbar-nav">
-        <a className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
-        <a className="nav-item nav-link" href="/saved">Saved Videos</a>
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-start">
+          <a className="navbar-item" href="/">
+            Home <span className="sr-only"></span>
+          </a>
+          <a className="navbar-item" href="/saved">
+            Saved Videos
+          </a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   );
 }
 

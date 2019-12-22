@@ -1,25 +1,31 @@
-import React from "react"; 
-import "./style.css"; 
+import React from "react";
+import "./style.css";
+import 'bulma/css/bulma.css'
 
-function Card (props) { 
-    
+function Card(props) {
+
     return (
-    <div>
-        {props.videos.map(item => { 
-        return <div className="card col-3"> 
-            <img src={item.thumbnail}/>
-            <p>{item.title}</p>
-            <p>{item.description}</p>
-            <p>{item.published}</p>
-            <a type="button" className="btn btn-primary" href={item.videoId} >Video </a>
-            <a type="button" className="btn btn-primary" href={item.channelId}> Channel</a>
+        <div>
+            {props.videos.map(item => {
+                return  <div className="card ">
+                    <div className="card-image">
+                            <img src={item.thumbnail} />
+                    </div>
+
+                    <div className="card-content">
+                        <p className="vid-title">{item.title}</p>
+                        {/* <p>{item.description}</p> */}
+                        {/* <p>{item.published}</p> */}
+                        <a type="button" className="button is-primary is-light" href={item.videoId} >Video </a>
+                        <a type="button" className="button button is-link is-light" href={item.channelId}> Channel</a>
+                    </div>
+                </div>
+            })}
         </div>
-        })}
-    </div>
     )
 
 
 }
 
-export default Card; 
+export default Card;
 
