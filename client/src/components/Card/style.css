@@ -32,7 +32,11 @@
     font-size: 0.8em;
 }
 
-i {
+.vid-display {
+    max-height: 225px; 
+}
+
+.saveBtn {
     color: greenyellow !important; 
     font-size: 1.3em;
     position: absolute; 

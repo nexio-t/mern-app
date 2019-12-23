@@ -10,7 +10,7 @@ function SavedCard(props) {
             {props.savedVideos.map(item => {
                 return  <div className="card ">
                     <div className="card-image">
-                            <img src={item.thumbnail} />
+                            <img className="vid-display" src={item.thumbnail} />
                     </div>
 
                     <p id={item._id} onClick={(event) => props.handleVideoRemove(item._id)}>

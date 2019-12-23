@@ -9,11 +9,11 @@ function Card(props) {
             {props.videos.map(item => {
                 return  <div className="card ">
                     <div className="card-image">
-                            <img src={item.thumbnail} />
+                            <img className="vid-display" src={item.thumbnail} />
                     </div>
 
                     <p id={item.videoId} onClick={(event) => props.handleSaveVideo(event)}>
-                    <i id={item.videoId} className="fas fa-plus-circle"></i>
+                    <i id={item.videoId} className="fas fa-plus-circle saveBtn"></i>
                     </p>
 
                     <div className="card-content">
