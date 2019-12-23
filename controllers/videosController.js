@@ -12,5 +12,13 @@ module.exports = {
       .find(req.query)
       .then(data => res.json(data))
       .catch(err => res.status(422).json(err))
+  },
+  deleteVideo: function(req, res) {
+    db.Video
+      .findById({_id: req.params.id})
+      .then(data => data.remove())
+      .then(data => res.json(data))
+      .catch(err => res.status(422).json(err)); 
+
   }
 };

@@ -17,12 +17,25 @@ componentDidMount () {
         })
         .catch(err => console.log(err));
 }
+
+handleVideoRemove = id => {
+
+    console.log("remove video registers"); 
+
+    API.deleteVideo(id)
+        .then(res => {
+            console.log(res);
+            this.componentDidMount();
+        })
+        .catch(err => console.log(err)); 
+
+}
     
 render() {
     console.log(this.state); 
     return (
         <Container>
-            <SavedCard savedVideos={this.state.savedVideos}/>
+            <SavedCard savedVideos={this.state.savedVideos} handleVideoRemove={this.handleVideoRemove}/>
         </Container>
     )
 

@@ -13,8 +13,8 @@ function SavedCard(props) {
                             <img src={item.thumbnail} />
                     </div>
 
-                    <p id={item.videoId}>
-                    <i id={item.videoId} className="fas fa-trash-alt"></i>
+                    <p id={item._id} onClick={(event) => props.handleVideoRemove(item._id)}>
+                    <i id={item._id}  className="fas fa-trash-alt"></i>
                     </p>
 
                     <div className="card-content">

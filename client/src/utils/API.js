@@ -13,5 +13,8 @@ export default {
   // Get all saved videos 
   getSavedVideos: function() {
     return axios.get("/api/videos");
+  },
+  deleteVideo: function(id) {
+    return axios.delete("/api/videos/" + id)
   }
 };
