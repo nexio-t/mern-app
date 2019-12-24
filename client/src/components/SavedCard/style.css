@@ -40,6 +40,12 @@ i {
     right: 5px; 
 }
 
+.vid-display {
+    max-height: 225px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
 .tooltip {
     position: relative;
     display: inline-block;

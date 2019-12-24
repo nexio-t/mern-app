@@ -33,7 +33,9 @@
 }
 
 .vid-display {
-    max-height: 225px; 
+    max-height: 225px;
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .saveBtn {

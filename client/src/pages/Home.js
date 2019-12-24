@@ -3,7 +3,7 @@ import API from "../utils/API";
 import Searchbar from "../components/Searchbar";
 import Container from "../components/Container";
 import Card from "../components/Card"; 
-import Columns from "../components/Columns";
+import ResultsContainer from "../components/ResultsContainer";
 
 class Home extends Component {
 
@@ -78,7 +78,9 @@ render() {
                 handleFormSubmit={this.handleFormSubmit}
                 handleInputChange={this.handleInputChange}
             />   
+            <ResultsContainer>
             <Card videos={this.state.videos} handleSaveVideo={this.handleSaveVideo}/>
+            </ResultsContainer>
         </Container>
        
     )
