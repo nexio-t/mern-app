@@ -1,3 +1,5 @@
-.result-container {
-    width: 30%;
+div .results-container {
+    position: relative;
+    /* left: 50px; */
+    left: 4%;
 }

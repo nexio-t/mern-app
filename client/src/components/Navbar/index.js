@@ -3,7 +3,8 @@ import "bulma/css/bulma.css";
 
 function Navbar() {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <html class="has-navbar-fixed-top">
+    <nav className="navbar is-fixed-top is-warning" role="navigation" aria-label="main navigation">
 
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-start">
@@ -16,6 +17,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
+    </html>
   );
 }
 

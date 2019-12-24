@@ -35,6 +35,9 @@ render() {
     console.log(this.state); 
     return (
         <Container>
+            <div className="distractify">
+                Distractify
+            </div>
             <SavedCard savedVideos={this.state.savedVideos} handleVideoRemove={this.handleVideoRemove}/>
         </Container>
     )

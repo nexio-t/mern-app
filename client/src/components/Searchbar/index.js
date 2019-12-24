@@ -6,22 +6,26 @@ import 'bulma/css/bulma.css'
 
 const SearchForm = props => {
     return (
-        <form>
-            <div className="field">
-                <label className="VideoSearchlabel"><h4>Search:</h4></label>
-                <br></br>
-                <input className="input"
-                    value={props.search}
-                    type="text"
-                    name="searchVideo"
-                    placeholder="Enter search term here"
-                    onChange={props.handleInputChange}
-                />
+        <div>
+            <div className="distractify">
+                Distractify
             </div>
-            <button type="submit" className="button is-light" onClick={props.handleFormSubmit}>
-                Submit
-            </button>
-        </form>
+            <form>
+                <div className="field">
+                    <br></br>
+                    <input className="input"
+                        value={props.search}
+                        type="text"
+                        name="searchVideo"
+                        placeholder="Enter search term here"
+                        onChange={props.handleInputChange}
+                    />
+                </div>
+                <button type="submit" className="button is-light" onClick={props.handleFormSubmit}>
+                    Submit
+                </button>
+            </form>
+        </div>
     )
 }
 
