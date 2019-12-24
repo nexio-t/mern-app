@@ -3,7 +3,7 @@ import "./style.css";
 import 'bulma/css/bulma.css'
 
 function Card(props) {
-
+    console.log(props);
     return (
         <div>
             {props.videos.map(item => {
@@ -20,8 +20,8 @@ function Card(props) {
                         <p className="vid-title">{item.title}</p>
                         {/* <p>{item.description}</p> */}
                         {/* <p>{item.published}</p> */}
-                        <a type="button" className="button is-primary is-light" href={item.videoId} >Video </a>
-                        <a type="button" className="button button is-link is-light" href={item.channelId}> Channel</a>
+                        <a type="button" className="button is-primary is-light" href={"https://www.youtube.com/watch?v=" + item.videoId} >Video </a>
+                        <a type="button" className="button button is-link is-light" href={"https://www.youtube.com/channel/" + item.channel}> Channel</a>
                     </div>
                 </div>
             })}
