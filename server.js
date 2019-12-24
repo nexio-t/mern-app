@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes); 
 
 //Mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/youtubevideos", {useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://userStream:stream4@ds335668.mlab.com:35668/heroku_n53tzshc", {useNewUrlParser: true});
 
 // Send every other request to the React app
 // Define any API routes before this runs
