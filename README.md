@@ -14,8 +14,6 @@ Have access to an internet browser.
 
 Studying for a test but keep getting distracted? Getting sucked in to continuous loops of cute puppy videos? Enter Distractify: a way to save distracting video content for later. With Distractify, users can search for videos on virtually any topic and can save videos for later indulgence. 
 
-![states-demo](./storefront.gif)
-
 ## Built With
 * CSS3
 * [Bulma](https://bulma.io/) - CSS Framework  
